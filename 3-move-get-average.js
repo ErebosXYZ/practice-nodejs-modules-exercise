@@ -1,10 +1,9 @@
 /** Leer README */
 
-arr = [1, 2, 3];
-let sum = 0;
-for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
-}
-total = sum / arr.length;
+const utils = require("./mis-utilidades/utils.js");
+// const {getAvgFromArray} = utils;
+const array = [1, 2, 3];
+const array2 = [10, 20, 30]
 
-console.log(total);
+console.log(utils.getAvgFromArray(array));
+console.log(utils.getAvgFromArray(array2));
